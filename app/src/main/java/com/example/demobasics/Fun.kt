@@ -40,4 +40,20 @@ fun main() {
     // Or you can print a Function nominating arguments
     println(birthdayGreetingTwoParam(age = 25, name="Two Param inverse"))
 
+    fun add(firstNumber: Int, secondNumber: Int): Int {
+        return firstNumber + secondNumber
+    }
+
+    fun sum() {
+        val firstNumber = 10
+        val secondNumber = 5
+        val thirdNumber = 8
+
+        val result = add(firstNumber, secondNumber)
+        val anotherResult = add(firstNumber, thirdNumber)
+
+        println("$firstNumber + $secondNumber = $result")
+        println("$firstNumber + $thirdNumber = $anotherResult")
+    }
+    sum()
 }
